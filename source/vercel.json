@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/index.ts": {
+      "includeFiles": "{views/**,dist/**,fragments/**,controller/**,common/**,utils/**,app.ts,env.ts,fragment.config.ts,types.ts}"
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api" }
+  ]
+}
