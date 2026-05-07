@@ -16,7 +16,7 @@ import { getFragment, postFragment, getFragmentFile } from './controller/fragmen
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export async function buildApp() {
-  const fastify = Fastify({ logger: false, bodyLimit: 10000000000000 });
+  const fastify = Fastify({ logger: false, bodyLimit: 10000000000000, trustProxy: true });
 
   await fastify.register(compress, {
     encodings: ['gzip', 'deflate'],
