@@ -12,3 +12,4 @@ dist
 !/deployment-config/ngcom-microservice/values-global-dev.yaml
 .yalc
 .DS_Store
+.vercel

@@ -32,7 +32,7 @@ export async function getFragment(req: FastifyRequest, reply: FastifyReply) {
     console.error('SSR render error:', err);
   }
   const js = existsSync(clientEntry) ? readFileSync(clientEntry, 'utf-8') : '';
-  const assetBase = `${req.protocol}://${req.host}/fragment/${pageName}`;
+  const assetBase = `/fragment/${pageName}`;
 
   reply.header('Cache-Control', 'no-store');
   return reply.send({
@@ -78,7 +78,7 @@ export async function postFragment(req: FastifyRequest, reply: FastifyReply) {
     console.error('SSR render error:', err);
   }
   const js = existsSync(clientEntry) ? readFileSync(clientEntry, 'utf-8') : '';
-  const assetBase = `${req.protocol}://${req.host}/fragment/${pageName}`;
+  const assetBase = `/fragment/${pageName}`;
 
   reply.header('Cache-Control', 'no-store');
   return reply.send({

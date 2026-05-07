@@ -17,7 +17,7 @@ export async function getStandalone(req: FastifyRequest, reply: FastifyReply) {
 
   const buildId = getBuildId(pageName);
   const { mountId, css, Component, getServerData } = await loadFragment(pageName);
-  const base = `${req.protocol}://${req.host}/fragment/${pageName}`;
+  const base = `/fragment/${pageName}`;
 
   const query = { ...(req.query as Record<string, string>) };
   const props = getServerData ? await getServerData(query) : undefined;
