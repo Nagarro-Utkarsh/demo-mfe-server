@@ -7,7 +7,7 @@
 
     "start": "tsx server.ts",
     "build": " node build.js",
-    "vercel-build": "echo skipping build (prebuilt dist committed)"
+    "vercel-build": "echo skipping build"
   },
   "dependencies": {
     "@fastify/compress": "^8.3.1",
