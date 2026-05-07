@@ -1,0 +1,30 @@
+
+site_name: commerce-webcomponents-mfeservice
+repo_name: AmwayCommon/commerce-webcomponents-mfeservice
+repo_url: https://github.com/AmwayCommon/commerce-webcomponents-mfeservice
+edit_uri: edit/main/docs/
+docs_dir: docs
+theme:
+  name: material
+  features:
+    - tabs
+nav:
+  - Overview: index.md
+markdown_extensions:
+  - def_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - tables
+  - pymdownx.magiclink
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.snippets:
+      check_paths: true
+  - toc:
+      permalink: true
+plugins:
+  - search
+extra:
+  version:
+    provider: mike

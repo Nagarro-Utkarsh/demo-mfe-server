@@ -1,0 +1,45 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: comwebcomponentsms
+  description: Microservice Description of comwebcomponentsms
+  amstackName: nextgen-commerce
+  amstackShortName: ngcom
+  labels:
+    project: comwebcomponentsms
+    app: commerce-webcomponents-mfeservice
+    businessArea: commerce
+    domain: e2e
+    service: webshop
+    domainEntity: webcomponents
+    tier: app
+    product: webshop
+  annotations:
+    github.com/project-slug: AmwayCommon/commerce-webcomponents-mfeservice
+    backstage.io/techdocs-ref: dir:.
+    sonarqube.org/project-key: commerce-webcomponents-mfeservice
+    argocd/app-selector: app=commerce-webcomponents-mfeservice
+  links:
+    - url: https://example.com/some/page
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+    - url: https://amcom-commerce-webcomponents-mfeservice-dev.preprod01.amcom-corp-preprod.amway.net/actuator/health
+      title: Actuator DEV URL
+  title: commerce-webcomponents-mfeservice
+  applicationRepo:
+    org: AmwayCommon
+    name: commerce-webcomponents-mfeservice
+    branch: main
+spec:
+  type: service
+  lifecycle: draft
+  owner: commerce-webshop
+  system: webshop
+  kind: Service
+  serviceOwner: commerce-webshop
+  serviceType: fastify
+  serviceName: commerce-webcomponents-mfeservice
+  firstOnboardingMarket: global
+notificationSlackChannelId: C0532D68U5P
+approvalSlackChannelId: C0532D6BJNM

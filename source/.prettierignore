@@ -1,0 +1,7 @@
+dist
+.env
+views/
+yarn.lock
+node_modules
+.env.example
+

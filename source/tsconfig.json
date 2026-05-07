@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "strict": false,
+    "target": "ES2022",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "allowArbitraryExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": [
+    "server.ts",
+    "env.ts",
+    "fragment.config.ts",
+    "types.ts",
+    "fragments",
+    "common",
+    "controller",
+    "mocks",
+    "content-slot-mappings",
+    "feature-flags",
+    "FragmentLayout.tsx",
+    "decalarations.d.ts",
+    "utils/readNewConfigs.ts"
+  ]
+}

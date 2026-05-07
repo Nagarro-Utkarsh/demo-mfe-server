@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{pageName}}</title>
+  <link rel="stylesheet" href="https://webfont-dev.amcom-corp-preprod.amway.net/fontawesome-pro/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://webfont-dev.amcom-corp-preprod.amway.net/fontawesome-pro/css/brands.min.css" />
+  <link rel="stylesheet" href="https://webfont-dev.amcom-corp-preprod.amway.net/fontawesome-pro/css/solid.min.css" />
+  <link rel="stylesheet" href="https://webfont-dev.amcom-corp-preprod.amway.net/fontawesome-pro/css/regular.min.css" />
+  {{#if stylesURL}}
+    <link rel="stylesheet" href="{{stylesURL}}" fetchpriority="high" />
+  {{/if}}
+  {{#if cssUrl}}
+    <link rel="preload" href="{{cssUrl}}" as="style" fetchpriority="high" />
+    <link rel="stylesheet" href="{{cssUrl}}" />
+  {{/if}}
+</head>
+<body>
+  <script data-fragment-data data-mount-id="{{mountId}}" type="application/json">{{{propsJson}}}</script>
+  <div id="{{mountId}}">{{{html}}}</div>
+  {{#if jsUrl}}<script type="module" src="{{jsUrl}}"></script>{{/if}}
+</body>
+</html>
